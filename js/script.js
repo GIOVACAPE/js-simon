@@ -7,21 +7,3 @@
 6) Al termine degli input  dell'utente, mostrare con un alert o in pagin il risultato-
 */
 
-function getRandomNumber(min, max) {
-    return Math.floor(math.random() * (max - min + 1)) + min;   
-}
-
-const numbers = [];
-
-for (let i = 0; i < 5;  i++) {
-    const randomNumber = getRandomNumber(1, 99);
-    console.log(randomNumber);
-
-    numbers.push(randomNumber);
-    
-}
-
-console.log(numbers);
-
-const numbersContainer = document.getElementById('numbers-container');
-numbersContainer.innerHTML = numbers;
